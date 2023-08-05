@@ -1,6 +1,6 @@
 public class routeExplore {
     public static void main(String[] args) {
-        String givenDirect = "WENNSEWNNN" ;
+        String givenDirect = "WWEENNN" ;
         int x=0, y=0 ;
 
         for (int i=0 ; i<givenDirect.length() ;i++){
@@ -16,7 +16,11 @@ public class routeExplore {
                 y-- ;
 
         }
-        int X2 = x*x ;
-        int Y2 = y*y ;
+            int X2 = x*x ;
+            int Y2 = y*y ;
+
+            float shortRoute =(float) Math.sqrt(X2+Y2) ;
+
+        System.out.println("The Shortest Route For The Given Direction Is : "+shortRoute);
     }
 }
